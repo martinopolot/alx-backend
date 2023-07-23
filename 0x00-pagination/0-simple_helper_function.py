@@ -1,15 +1,10 @@
 #!/usr/bin/env python3
-"""
-function named index_range
-that takes two integer arguments page and page_size.
-"""
+""" Simple helper function """
 
-index_range = __import__('0-simple_helper_function').index_range
+from typing import Tuple
 
-res = index_range(1, 7)
-print(type(res))
-print(res)
 
-res = index_range(page=3, page_size=15)
-print(type(res))
-print(res)
+def index_range(page: int, page_size: int) -> Tuple[int, int]:
+    """ returns tuple of size two containing a start index and an end index """
+    pass
+
