@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Task 3: Deletion-resilient hypermedia pagination
+"""Deletion-resilient hypermedia pagination
 """
 
 import csv
@@ -69,3 +69,4 @@ class Server:
             'data': page_data,
         }
         return page_info
+
