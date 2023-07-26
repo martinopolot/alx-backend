@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
-"""a class FIFOCache that inherits from BaseCaching and is a caching system
+"""a class FIFOCache that inherits from BaseCaching 
+and is a caching system
 """
 
 
@@ -27,7 +28,7 @@ class FIFOCache(BaseCaching):
 
         if len(self.cache_data) > BaseCaching.MAX_ITEMS:
             first_key, _ = self.cache_data.popitem(last=False)
-            print(f"DISCARD: {first_key}")
+            print(f'DISCARD: {first_key}')
 
         self.cache_data[key] = item
 
